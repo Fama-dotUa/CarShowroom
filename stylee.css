@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Layout';
+  src: url(/CarShowroom/fonts/Layout.otf) format('otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Layout-Bold';
+  src: url(/CarShowroom/fonts/Layout-Bold.otf) format('otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Layout-Italic';
+  src: url(/CarShowroom/fonts/Layout-Italic.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Layout-BoldItalic';
+  src: url(/CarShowroom/fonts/Layout-BoldItalic.otf) format('otf');
+  font-weight: 400;
+}
+
+body{
+  font-family: 'Layout', sans-serif;
+  font-weight: 400;
+  color: #FFF;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+.wrapeer{
+  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
+  width: 100%;
+}
+
+.headerBox{
+  width: 1417px;
+  margin: 0 auto;
+}
+
+header{
+  padding: 40px 40px 0;
+}
+/*text-transform: uppercase;*/
+header .logo{
+  font-size: 25px;
+}
+
+header nav{
+  float: right;
+  width: 75%;
+}
+
+header nav ul{
+  list-style: none;
+  
+  display: flex;
+  justify-content: space-between;
+}
