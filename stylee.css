@@ -38,32 +38,86 @@ img{
   max-width: 100%;
 }
 
+
+/*Шапка початок*/
 .wrapeer{
   background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
   width: 100%;
 }
 
 .headerBox{
-  width: 1417px;
+  width: 100%;
+  height: inherit;
+  padding: 20px 40px 0;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header{
-  padding: 40px 40px 0;
-}
-/*text-transform: uppercase;*/
 header .logo{
   font-size: 25px;
 }
 
 header nav{
-  float: right;
-  width: 75%;
+  width: 65%;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 header nav ul{
   list-style: none;
-  
-  display: flex;
-  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: inline-block;
 }
+
+header nav ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header nav ul li a{
+  font-size: 18px;
+  color: #000;
+  display: inline-block;
+}
+
+.newAccount{
+  float: right;
+  height: inherit;
+  margin-left: 450px;
+}
+
+/*Шапка кінець*/
+
+/*Текст з малюнком*/
+.mainText{
+  font-weight: 500;
+  font-size: 64px;
+  color: #000;
+  margin-top: 170px;
+}
+
+
+/*Кнопка пошук машини*/
+.mainbutton{
+  background-color: #FE8521;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38%;
+  margin-bottom: 50px;
+  width: 383px;
+  height: 71px;
+  padding: auto;
+  border: none;
+  border-radius: 17px;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*Фото машини*/
+
