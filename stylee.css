@@ -27,6 +27,7 @@ body{
   font-weight: 400;
   color: #FFF;
   margin: 0 auto;
+  zoom: 100%;
 }
 
 a{
@@ -43,11 +44,11 @@ img{
 .wrapeer{
   background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
   width: 100%;
+  height: 800px;
 }
 
 .headerBox{
   width: 100%;
-  height: inherit;
   padding: 20px 40px 0;
   margin: 0 auto;
   display: flex;
@@ -93,22 +94,28 @@ header nav ul li a{
 
 /*Текст з малюнком*/
 .mainText{
+  position: absolute;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 64px;
   color: #000;
-  margin-top: 170px;
+  text-align: center;
+  top: 100px;
+  left: 10%;
 }
 
 
 /*Кнопка пошук машини*/
 .mainbutton{
+  position: absolute;
+  top: 280px;
+  left: 37%;
   background-color: #FE8521;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 38%;
-  margin-bottom: 50px;
+  margin: auto;
   width: 383px;
   height: 71px;
   padding: auto;
@@ -120,4 +127,43 @@ header nav ul li a{
 }
 
 /*Фото машини*/
+#car-img{
+  position: absolute;
+  width: 947px;
+  height: 341px;
+  top: 400px;
+  left: 15%;
+  margin: auto;
+}
 
+/*---------------------*/
+#about-us{
+  width: 100%;
+  height: 685px;
+  padding: 60px 163px 140px 100px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000;
+}
+
+#about-us h3{
+  margin-left: 328px;
+  font-size: 36px;
+  font-weight: 700px;
+}
+
+#about-us p{
+  padding: auto;
+  width: 1214px;
+  font-size: 24px;
+  font-weight: 400px;
+}
+
+/*-----------------------------*/
+
+
+.car-in-stock{
+  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
+  width: 100%;
+  height: 768px;
+}
