@@ -1,31 +1,17 @@
+@import url(https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style);
 @font-face {
-  font-family: 'Layout';
-  src: url(/CarShowroom/fonts/Layout.otf) format('otf');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Layout-Bold';
-  src: url(/CarShowroom/fonts/Layout-Bold.otf) format('otf');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Layout-Italic';
-  src: url(/CarShowroom/fonts/Layout-Italic.ttf) format('ttf');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Layout-BoldItalic';
-  src: url(/CarShowroom/fonts/Layout-BoldItalic.otf) format('otf');
-  font-weight: 400;
+    font-family: "Bitstream Iowan Old Style";
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style")format("svg");
 }
 
 body{
-  font-family: 'Layout', sans-serif;
-  font-weight: 400;
-  color: #FFF;
+  font-family: "Bitstream Iowan Old Style";
+  color: #000;
   margin: 0 auto;
   zoom: 100%;
 }
@@ -58,6 +44,7 @@ img{
 
 header .logo{
   font-size: 25px;
+  color: #fff;
 }
 
 header nav{
@@ -94,28 +81,26 @@ header nav ul li a{
 
 /*Текст з малюнком*/
 .mainText{
-  position: absolute;
+  position: relative;
+  margin: auto;
   margin-bottom: 0;
-  font-weight: 500;
+  margin-top: 80px;
+  font-weight: 400px;
   font-size: 64px;
-  color: #000;
   text-align: center;
-  top: 100px;
-  left: 10%;
 }
 
 
 /*Кнопка пошук машини*/
 .mainbutton{
-  position: absolute;
-  top: 280px;
-  left: 37%;
+  position: relative;
   background-color: #FE8521;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 30px;
   width: 383px;
   height: 71px;
   padding: auto;
@@ -128,32 +113,46 @@ header nav ul li a{
 
 /*Фото машини*/
 #car-img{
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
   width: 947px;
   height: 341px;
-  top: 400px;
-  left: 15%;
   margin: auto;
+  margin-bottom: 0;
+  margin-top: 40px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+}
+
+#shadow-car{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: -80px;
 }
 
 /*---------------------*/
 #about-us{
   width: 100%;
-  height: 355px;
-  padding: 60px 163px 140px 100px;
-  gap: 0px;
-  opacity: 0px;
-  color: #000;
+  height: 455px;
 }
 
 #about-us h3{
-  margin-left: 328px;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-weight: 700px;
 }
 
 #about-us p{
-  padding: auto;
+  position: relative;
+  text-align: left;
+  padding-left: 8%;
   width: 1214px;
   font-size: 24px;
   font-weight: 400px;
@@ -170,7 +169,6 @@ header nav ul li a{
 }
 
 .car-in-stock p{
-  color: #000;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
@@ -197,7 +195,6 @@ header nav ul li a{
   margin-top: 12px;
   font-size: 20px;
   font-weight: 700px;
-  color: #000;
 }
 
 .car-in-stock .cars .block{
@@ -236,7 +233,6 @@ header nav ul li a{
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #FE8521;
-  color: #000;
 }
 
 .block-of-information .top-block .top-text-block{
@@ -247,7 +243,7 @@ header nav ul li a{
 
 .block-of-information .top-block h5{
   margin:0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-size: 24px;  
 }
 
@@ -259,14 +255,20 @@ header nav ul li a{
   font-size: 28px;
 }
 
+.block-of-information .top-block .top-text-block span{
+  display: flex;
+  justify-content: space-between;
+}
+
 .block-of-information .top-block .top-text-block span img{
+  margin: 0;
+  padding: 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .block-of-information .bottom-block{
   position: relative;
-  color: #000;
   display: flex;
   justify-content: center;
   padding-left: 120px;
@@ -275,15 +277,20 @@ header nav ul li a{
 .block-of-information .bottom-block h5{
   font-size: 24px;
   font-weight: 700px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .block-of-information .bottom-block p{
   font-size: 20px;
   font-weight: 700px;
-  margin-bottom: 6px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .block-of-information .bottom-block .different{
   margin-right: 180px;
   margin-top: 30px;
+  padding: 0;
 }
