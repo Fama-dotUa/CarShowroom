@@ -223,3 +223,67 @@ header nav ul li a{
 }
 
 /*----------------------------------------*/
+
+.block-of-information{
+  position: relative;
+  height: 560px;
+}
+
+.block-of-information .top-block{
+  position: relative;
+  padding-left: 120px;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #FE8521;
+  color: #000;
+}
+
+.block-of-information .top-block .top-text-block{
+ margin-top: 50px;
+ margin-right: 170px;
+
+}
+
+.block-of-information .top-block h5{
+  margin:0;
+  margin-bottom: 40px;
+  font-size: 24px;  
+}
+
+#namber{
+  font-size: 28px;
+}
+
+#email{
+  font-size: 28px;
+}
+
+.block-of-information .top-block .top-text-block span img{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block-of-information .bottom-block{
+  position: relative;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+}
+
+.block-of-information .bottom-block h5{
+  font-size: 24px;
+  font-weight: 700px;
+}
+
+.block-of-information .bottom-block p{
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 6px;
+}
+
+.block-of-information .bottom-block .different{
+  margin-right: 180px;
+  margin-top: 30px;
+}
