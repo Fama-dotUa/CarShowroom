@@ -1,0 +1,470 @@
+@import url(https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style);
+@font-face {
+    font-family: "Bitstream Iowan Old Style";
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style")format("svg");
+}
+
+body{
+  font-family: "Bitstream Iowan Old Style";
+  color: #000;
+  margin: 0 auto;
+  zoom: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/*Шапка початок*/
+.wrapeer{
+  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
+  width: 100%;
+  height: 800px;
+}
+
+.headerBox{
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: 800;
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-flow: row nowrap;
+}
+
+header nav ul{
+  list-style: none;
+  margin: 0;
+  margin-left: -150px;
+  margin-bottom: 0;
+  display: inline-block;
+  justify-content: center;
+}
+
+header nav ul li{
+  display: inline-block;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  font-size: 18px;
+  color: #000;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.newAccount{
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 40px;
+}
+
+/*Шапка кінець*/
+
+/*блок огляду авто*/
+.car-inspection{
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  background-color: #F7F7F7;
+}
+
+.img-slaiders{
+  height: 90%;
+  width: 50%;
+  display: flex;
+  margin-left: 40px;
+}
+
+.car-information{
+  height: 90%;
+  width: 45%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.car-information ul{
+  list-style: none;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.car-information ul li{
+  font-size: 24px;
+  font-weight: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D3D1D1;
+}
+
+#brand-name{
+  border:none;
+  font-weight: bold;
+}
+
+#price{
+  margin-top: 25px;
+  border:none;
+  font-weight: bold;
+}
+
+#button-reserve{
+  border:none;
+}
+
+#button-reserve button{
+  width: 350px;
+  height: 59px;
+  border-radius: 17px;
+  border: 4px solid #FE8521;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/*--------------------------------------------*/
+
+.middle{
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.first-block{
+  width: 50%;
+  height: auto;
+  margin-left: 40px;
+}
+
+.first-block h1{
+  margin-left: 40px;
+}
+
+.additional-services{
+  margin: 0;
+  padding: 0;
+  font-family: 400;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.additional-services ul{
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.additional-services ul li{
+  margin: 0;
+  width: 100%;
+  padding:4px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+}
+
+.first-li{
+  border-bottom: 1px solid #000;
+}
+
+.additional-services .nested-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-services .nested-list li{
+  font-size: 24px;
+}
+
+#block-interior-material label> input{
+  visibility: hidden;
+  position: absolute;
+}
+
+#block-interior-material label > input + img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+#block-interior-material label> input:checked + img{
+  border:2px solid rgb(69, 86, 197);
+}
+
+.right-block{
+  text-align: right;
+}
+
+.right-block input{
+  position: relative;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.right-block input:checked {
+  background-color: #000;
+}
+
+
+#colorblock input{
+  appearance: none;
+  width: 100px;
+  height: 100px;
+}
+
+#colorblock input:checked{
+  border: 2px solid rgb(69, 86, 197);
+}
+
+#color1{
+  background-color: #0015FF;
+}
+#color2{
+  background-color: #FF00A6;
+}
+#color3{
+  background-color: #00FFC8;
+}
+#color4{
+  background-color: #fff;
+  border: 1.5px solid #000;
+}
+#color5{
+  background-color: #000;
+}
+#color6{
+  background-color: #4B4B4B;
+}
+#color7{
+  background-color: #FF0105;
+}
+#color8{
+  background-color: #9A1517;
+}
+#color9{
+  background-color: #FF9900;
+}
+#color10{
+  background-color: #6D9ADC;
+}
+
+.block-radio-fuel{
+  display: flex;
+  justify-content:baseline;
+}
+
+.block-radio-fuel div{
+  margin-right: 20px;
+}
+
+.block-radio-fuel input{
+  position: relative;
+  appearance: none;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.block-radio-fuel input:checked{
+  background-color: #000;
+}
+/*--------------------------------------------*/
+
+.brief-information{
+  width: 600px;
+  height: auto;
+  margin-left: 25px;
+  margin-right: 50px;
+  border: 2px solid #000;
+  border-radius: 18px;
+}
+
+.second-block{
+  height: auto;
+  width: 86%;
+  padding: 0;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.second-block ul{
+  list-style: none;
+}
+
+.second-block ul li{
+  font-size: 24px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #D3D1D1;
+}
+
+.second-block ul li img{
+  width: 350px;
+  height: 200px;
+}
+
+#unikum{
+  border: none;
+}
+
+.end-block{
+  list-style: none;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.end-block ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.end-block ul li{
+  margin-bottom: 10px;
+}
+
+.price-block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.end-block button{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  padding-top: 14px;
+  padding: auto;
+  margin: auto;
+  margin-top: 50px;
+  width: 475px;
+  height: 70px;
+  border-radius: 17px;
+  border: none;
+  background-color: #FE8521;
+}
+/*--------------------------------------------*/
+
+
+
+/*Інформаційний блок*/
+
+.block-of-information{
+  position: relative;
+  height: 560px;
+  border-top: 1px solid #000;
+}
+
+.block-of-information .top-block{
+  position: relative;
+  padding-left: 120px;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #FE8521;
+}
+
+.block-of-information .top-block .top-text-block{
+ margin-top: 50px;
+ margin-right: 170px;
+
+}
+
+.block-of-information .top-block h5{
+  margin:0;
+  margin-bottom: 25px;
+  font-size: 24px;  
+}
+
+#namber{
+  font-size: 28px;
+}
+
+#email{
+  font-size: 28px;
+}
+
+.block-of-information .top-block .top-text-block span{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-of-information .top-block .top-text-block span img{
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block-of-information .bottom-block{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+}
+
+.block-of-information .bottom-block h5{
+  font-size: 24px;
+  font-weight: 700px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.block-of-information .bottom-block p{
+  font-size: 20px;
+  font-weight: 700px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.block-of-information .bottom-block .different{
+  margin-right: 180px;
+  margin-top: 30px;
+  padding: 0;
+}

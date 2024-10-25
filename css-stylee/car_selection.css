@@ -1,0 +1,180 @@
+@import url(https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style);
+@font-face {
+    font-family: "Bitstream Iowan Old Style";
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style")format("svg");
+}
+
+body{
+  font-family: "Bitstream Iowan Old Style";
+  color: #000;
+  margin: 0 auto;
+  zoom: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/*Шапка початок*/
+.wrapeer{
+  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
+  width: 100%;
+  height: 800px;
+}
+
+.headerBox{
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: 800;
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-flow: row nowrap;
+}
+
+header nav ul{
+  list-style: none;
+  margin: 0;
+  margin-left: -150px;
+  margin-bottom: 0;
+  display: inline-block;
+  justify-content: center;
+}
+
+header nav ul li{
+  display: inline-block;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  display: inline-block;
+}
+
+.newAccount{
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 40px;
+}
+
+/*Шапка кінець*/
+
+.search-block{
+  height: 1203px;
+  width: 100%;
+  padding: 40px;
+}
+
+.search-block .block-of-options{
+  height: 95%;
+  width: 95%;
+  border: 1px solid #000;
+}
+
+
+
+
+/*-Іняормаційний блок-*/
+
+.block-of-information{
+  position: relative;
+  height: 560px;
+}
+
+.block-of-information .top-block{
+  position: relative;
+  padding-left: 120px;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #FE8521;
+}
+
+.block-of-information .top-block .top-text-block{
+ margin-top: 50px;
+ margin-right: 170px;
+
+}
+
+.block-of-information .top-block h5{
+  margin:0;
+  margin-bottom: 25px;
+  font-size: 24px;  
+}
+
+#namber{
+  font-size: 28px;
+}
+
+#email{
+  font-size: 28px;
+}
+
+.block-of-information .top-block .top-text-block span{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-of-information .top-block .top-text-block span img{
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block-of-information .bottom-block{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+}
+
+.block-of-information .bottom-block h5{
+  font-size: 24px;
+  font-weight: 700px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.block-of-information .bottom-block p{
+  font-size: 20px;
+  font-weight: 700px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.block-of-information .bottom-block .different{
+  margin-right: 180px;
+  margin-top: 30px;
+  padding: 0;
+}

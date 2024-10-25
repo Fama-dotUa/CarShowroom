@@ -1,0 +1,307 @@
+@import url(https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style);
+@font-face {
+    font-family: "Bitstream Iowan Old Style";
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style")format("svg");
+}
+
+body{
+  font-family: "Bitstream Iowan Old Style";
+  color: #000;
+  margin: 0 auto;
+  zoom: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/*Шапка початок*/
+.wrapeer{
+  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
+  width: 100%;
+  height: 800px;
+}
+
+.headerBox{
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  padding-left: 40px;
+  font-size: 25px;
+  color: #fff;
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-flow: row nowrap;
+}
+
+header nav ul{
+  list-style: none;
+  margin: 0;
+  margin-left: -150px;
+  margin-bottom: 0;
+  display: inline-block;
+  justify-content: center;
+}
+
+header nav ul li{
+  display: inline-block;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  font-size: 18px;
+  color: #000;
+  display: inline-block;
+}
+
+.newAccount{
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 40px;
+}
+
+/*Шапка кінець*/
+
+/*Текст з малюнком*/
+.mainText{
+  position: relative;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 80px;
+  font-weight: 400px;
+  font-size: 64px;
+  text-align: center;
+}
+
+
+/*Кнопка пошук машини*/
+.mainbutton{
+  position: relative;
+  background-color: #FE8521;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 383px;
+  height: 71px;
+  padding: auto;
+  border: none;
+  border-radius: 17px;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*Фото машини*/
+#car-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 947px;
+  height: 341px;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 40px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+}
+
+#shadow-car{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: -80px;
+}
+
+/*---------------------*/
+#about-us{
+  width: 100%;
+  height: 455px;
+}
+
+#about-us h3{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700px;
+  
+}
+
+#about-us p{
+  position: relative;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 1214px; 
+  font-size: 24px;
+  font-weight: 400px;
+  text-indent: 25px;
+}
+
+/*-----------------------------*/
+
+
+.car-in-stock{
+  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
+  width: 100%;
+  height: 690px;
+  padding-top: 50px;
+}
+
+.car-in-stock p{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: 400px;
+}
+
+.car-in-stock .cars img{
+  width: 349px;
+  height: 280px;
+  background: #fff;
+}
+
+.car-in-stock .cars{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.car-in-stock .cars span{
+  display: block;
+  text-align: left;
+  margin: 7px;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700px;
+}
+
+.car-in-stock .cars .block{
+  margin: 25px;
+}
+
+#all-auto-button{
+  background-color: #FE8521;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 439px;
+  height: 59px;
+  padding: auto;
+  border: none;
+  border-radius: 17px;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*----------------------------------------*/
+
+.block-of-information{
+  position: relative;
+  height: 560px;
+}
+
+.block-of-information .top-block{
+  position: relative;
+  padding-left: 120px;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #FE8521;
+}
+
+.block-of-information .top-block .top-text-block{
+ margin-top: 50px;
+ margin-right: 170px;
+
+}
+
+.block-of-information .top-block h5{
+  margin:0;
+  margin-bottom: 25px;
+  font-size: 24px;  
+}
+
+#namber{
+  font-size: 28px;
+}
+
+#email{
+  font-size: 28px;
+}
+
+.block-of-information .top-block .top-text-block span{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-of-information .top-block .top-text-block span img{
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block-of-information .bottom-block{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+}
+
+.block-of-information .bottom-block h5{
+  font-size: 24px;
+  font-weight: 700px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.block-of-information .bottom-block p{
+  font-size: 20px;
+  font-weight: 700px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.block-of-information .bottom-block .different{
+  margin-right: 180px;
+  margin-top: 30px;
+  padding: 0;
+}
