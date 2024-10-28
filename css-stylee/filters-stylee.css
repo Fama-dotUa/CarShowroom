@@ -42,11 +42,13 @@ img{
   align-items: center;
 }
 
-header .logo{
+header .logo a{
   padding-left: 40px;
+  font-weight: 600;
   font-size: 25px;
-  color: #fff;
+  color: #000;
 }
+
 header nav{
   display: flex;
   justify-content: center;
