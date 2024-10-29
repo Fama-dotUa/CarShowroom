@@ -1,51 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<link href="https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css-stylee/filters-stylee.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<title>CarShowroom</title>
+    <meta charset="utf-8">
+    <link href="https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css-stylee/filters-stylee.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>CarShowroom</title>
 </head>
 <body>
-	<div class="wrapeer">
-		<header class="headerBox">
-			
-			<span class="logo">Наше-Авторія</span>
-			
-			<nav>
-				<ul >
-					<li><a href="#">КОНТАКТИ</a></li>
-					<li><a href="#">ПРО НАС</a></li>
-					<li><a href="#">ПРОПОЗИЦІЇ</a></li>
-				</ul>
-			</nav>
+    <div class="wrapeer">
+        <header class="headerBox">
+            <span class="logo">Наше-Авторія</span>
+            <nav>
+                <ul>
+                    <li><a href="#">КОНТАКТИ</a></li>
+                    <li><a href="#">ПРО НАС</a></li>
+                    <li><a href="#">ПРОПОЗИЦІЇ</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="newAccount"><img src="img/account.svg"></a>
+        </header>
 
-			<a href="#" class="newAccount"><img src="img/account.svg"></a>
-		</header>
+        <h2 class="mainText">ЗНАЙДИ СВОЮ ІДЕАЛЬНУ МАШИНУ</h2>
+        <div class="filter">
+            <span>
+                <ul>
+                    <!-- Dropdown for Марка -->
+                    <li class="dropdown">
+                        <button onclick="toggleDropdown('brand-dropdown')">Марка <img src="img/ep_arrow-down.svg"></button>
+                        <div id="brand-dropdown" class="dropdown-content">
+                            <label><input type="checkbox" value="audi"> Audi</label>
+                            <label><input type="checkbox" value="bmw"> BMW</label>
+                            <label><input type="checkbox" value="chevrolet"> Chevrolet</label>
+                            <label><input type="checkbox" value="ford"> Ford</label>
+                            <label><input type="checkbox" value="honda"> Honda</label>
+                            <label><input type="checkbox" value="hyundai"> Hyundai</label>
+                            <label><input type="checkbox" value="kia"> Kia</label>
+                            <label><input type="checkbox" value="lexus"> Lexus</label>
+                            <label><input type="checkbox" value="toyota"> Toyota</label>
+                        </div>
+                    </li>
+                    <li>|</li>
 
-		<h2 class="mainText">ЗНАЙДИ СВОЮ ІДЕАЛЬНУ МАШИНУ</h2>
-		<div class="filter">
-			<span>
-				<ul>
-					<li>Марка<img src="img/ep_arrow-down.svg"></li>
-					<li>|</li>
-					<li>Обʼєм двигуна<img src="img/ep_arrow-down.svg"></li>
-					<li>|</li>
-					<li>Вид палива<img src="img/ep_arrow-down.svg"></li>
-					<li>|</li>
-					<li>Вид кузова<img src="img/ep_arrow-down.svg"></li>
-					<li>|</li>
-					<li>Ціна<img src="img/ep_arrow-down.svg"></li>
-					<li><button class="mainbutton" id="search">Шукати</button></li>
-					<li><button class="mainbutton"><img src="img/filter.svg"></button></li>
-				</ul>
-			</span>
-		</div>
-		<div>
-			<img id="car-img" src="img/maincar.png" >
-			<img id="shadow-car" src="img/Rectangle 2.svg">
-		</div>
-	</div>
+                    <!-- Dropdown for Обʼєм двигуна -->
+                    <li class="dropdown">
+                        <button onclick="toggleDropdown('engine-dropdown')">Обʼєм двигуна <img src="img/ep_arrow-down.svg"></button>
+                        <div id="engine-dropdown" class="dropdown-content">
+                            <label><input type="checkbox" value="1.6"> 1.6 L</label>
+                            <label><input type="checkbox" value="2.0"> 2.0 L</label>
+                            <label><input type="checkbox" value="3.0"> 3.0 L</label>
+                        </div>
+                    </li>
+                    <li>|</li>
+
+                    <!-- Dropdown for Вид палива -->
+                    <li class="dropdown">
+                        <button onclick="toggleDropdown('fuel-dropdown')">Вид палива <img src="img/ep_arrow-down.svg"></button>
+                        <div id="fuel-dropdown" class="dropdown-content">
+                            <label><input type="checkbox" value="petrol"> Бензин</label>
+                            <label><input type="checkbox" value="diesel"> Дизель</label>
+                            <label><input type="checkbox" value="electric"> Електро</label>
+                        </div>
+                    </li>
+                    <li>|</li>
+
+                    <!-- Dropdown for Вид кузова -->
+                    <li class="dropdown">
+                        <button onclick="toggleDropdown('body-dropdown')">Вид кузова <img src="img/ep_arrow-down.svg"></button>
+                        <div id="body-dropdown" class="dropdown-content">
+                            <label><input type="checkbox" value="sedan"> Седан</label>
+                            <label><input type="checkbox" value="suv"> Позашляховик</label>
+                            <label><input type="checkbox" value="hatchback"> Хетчбек</label>
+                        </div>
+                    </li>
+                    <li>|</li>
+
+                    <!-- Dropdown for Ціна -->
+                    <li class="dropdown">
+                        <button onclick="toggleDropdown('price-dropdown')">Ціна <img src="img/ep_arrow-down.svg"></button>
+                        <div id="price-dropdown" class="dropdown-content">
+                            <label><input type="checkbox" value="20000"> До 20 000</label>
+                            <label><input type="checkbox" value="30000"> До 30 000</label>
+                            <label><input type="checkbox" value="50000"> До 50 000</label>
+                        </div>
+                    </li>
+
+                    <li><button class="mainbutton" id="search">Шукати</button></li>
+                    <li><button class="mainbutton"><img src="img/filter.svg"></button></li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <img id="car-img" src="img/maincar.png">
+            <img id="shadow-car" src="img/Rectangle 2.svg">
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown(id) {
+            document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                if (dropdown.id !== id) {
+                    dropdown.style.display = 'none';
+                }
+            });
+            var element = document.getElementById(id);
+            element.style.display = element.style.display === 'block' ? 'none' : 'block';
+        }
+
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
