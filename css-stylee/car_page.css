@@ -27,12 +27,6 @@ img{
 
 
 /*Шапка початок*/
-.wrapeer{
-  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
-  width: 100%;
-  height: 800px;
-}
-
 .headerBox{
   width: 100%;
   margin: 0;
@@ -152,9 +146,13 @@ header nav ul li a{
   font-weight: 400;
 }
 
+#button-reserve button:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
+}
 /*--------------------------------------------*/
 
-.middle{
+.middle form {
   width: 100%;
   height: 1024px;
   display: flex;
@@ -387,6 +385,11 @@ header nav ul li a{
   border-radius: 17px;
   border: none;
   background-color: #FE8521;
+}
+
+.end-block button:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
 }
 /*--------------------------------------------*/
 

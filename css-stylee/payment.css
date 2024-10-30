@@ -27,11 +27,6 @@ img{
 
 
 /*Шапка початок*/
-.wrapeer{
-  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
-  width: 100%;
-  height: 800px;
-}
 
 .headerBox{
   width: 100%;
@@ -42,11 +37,13 @@ img{
   align-items: center;
 }
 
-header .logo{
+header .logo a{
   padding-left: 40px;
+  font-weight: 600;
   font-size: 25px;
-  color: #fff;
+  color: #000;
 }
+
 header nav{
   display: flex;
   justify-content: center;
@@ -85,223 +82,216 @@ header nav ul li a{
 }
 
 /*Шапка кінець*/
+/*------------------------------------------------------------*/
 
-/*Текст з малюнком*/
-.mainText{
-  position: relative;
-  margin: auto;
-  margin-bottom: 0;
-  margin-top: 80px;
-  font-weight: 400px;
-  font-size: 64px;
-  text-align: center;
-}
-
-
-/*Кнопка пошук машини*/
-.mainbutton{
-  position: relative;
-  background-color: #FE8521;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 30px;
-  width: 383px;
-  height: 71px;
-  padding: auto;
-  border: none;
-  border-radius: 17px;
-  font-size: 32px;
-  font-weight: 400;
-  text-align: center;
-}
-
-/*Фото машини*/
-#car-img{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 947px;
-  height: 341px;
-  margin: auto;
-  margin-bottom: 0;
-  margin-top: 40px;
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
-}
-
-#shadow-car{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: -80px;
-}
-
-/*---------------------*/
-#about-us{
+.wrapeer{
   width: 100%;
-  height: 455px;
-}
-
-#about-us h3{
-  position: relative;
-  display: block;
-  text-align: center;
-  margin: auto;
-  margin-top: 45px;
-  margin-bottom: 30px;
-  font-size: 36px;
-  font-weight: 700px;
-  
-}
-
-#about-us p{
-  position: relative;
-  display: block;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 10px;
-  width: 1214px; 
-  font-size: 24px;
-  font-weight: 400px;
-  text-indent: 25px;
-}
-
-/*-----------------------------*/
-
-
-.car-in-stock{
-  background: linear-gradient(90deg, rgba(39,83,103,1) 0%, rgba(90,140,163,1) 25%, rgba(162,201,218,1) 50%, rgba(183,211,224,1) 75%, rgba(214,227,233,1) 100%);
-  width: 100%;
-  height: 690px;
   padding-top: 50px;
-}
-
-.car-in-stock p{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-  font-size: 36px;
-  font-weight: 400px;
-}
-
-.car-in-stock .cars img{
-  width: 349px;
-  height: 280px;
-  background: #fff;
-}
-
-.car-in-stock .cars{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.car-in-stock .cars span{
   display: block;
-  text-align: left;
-  margin: 7px;
-  margin-top: 12px;
-  font-size: 20px;
-  font-weight: 700px;
-}
-
-.car-in-stock .cars .block{
-  margin: 25px;
-}
-
-#all-auto-button{
-  background-color: #FE8521;
-  color: #fff;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 50px;
-  width: 439px;
-  height: 59px;
-  padding: auto;
-  border: none;
-  border-radius: 17px;
-  font-size: 32px;
-  font-weight: 400;
-  text-align: center;
+  padding-bottom: 100px;
 }
-
-/*----------------------------------------*/
-
-.block-of-information{
-  position: relative;
-  height: 560px;
-}
-
-.block-of-information .top-block{
-  position: relative;
-  padding-left: 120px;
-  height: 40%;
+.main-block{
+  width: auto;
   display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #FE8521;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 30px;
 }
 
-.block-of-information .top-block .top-text-block{
- margin-top: 50px;
- margin-right: 170px;
-
+.left-block{
+  margin-right: 10px;
+  height: 80%;
+  width: auto;
+  padding-left: 45px;
+  padding-right: 30px;
 }
 
-.block-of-information .top-block h5{
-  margin:0;
+.personal-info p{
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.personal-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.personal-info .first-block{
+  margin: 0;
+}
+.personal-info .second-block{
+  margin: 0;
+  margin-left: 100px;
+}
+
+.personal-info input{
+  height: 60px;
+  width: 350px;
+  font-size: 24px;
+  padding-left: 10px;
   margin-bottom: 25px;
-  font-size: 24px;  
 }
 
-#namber{
-  font-size: 28px;
+.third-block{
+  border: 1px solid #000;
+  padding: 0;
 }
 
-#email{
-  font-size: 28px;
+
+.payment-method label{
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+.payment-method input{
+  appearance: none;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
-.block-of-information .top-block .top-text-block span{
+.payment-method input:checked{
+  background-color: #000;
+}
+
+.third-block .payment-method{
+  height: 50px;
+  padding-top: 22px;
+  padding-left: 18px;
+}
+
+.third-block .card{
+  height:auto;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-left: 20px;
+  padding-right: 400px;
+  padding-bottom: 20px;
+}
+
+.third-block .card p{
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.third-block .card input{
+  margin: 0;
+  padding: auto;
+}
+
+.next-card-info{
   display: flex;
   justify-content: space-between;
 }
 
-.block-of-information .top-block .top-text-block span img{
-  margin: 0;
-  padding: 0;
-  margin-left: 10px;
-  margin-right: 10px;
+.next-card-info label{
+  font-size: 32px;
 }
 
-.block-of-information .bottom-block{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding-left: 120px;
-}
-
-.block-of-information .bottom-block h5{
+#number-card{
+  height: 40px;
+  width: 400px;
   font-size: 24px;
-  font-weight: 700px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
 }
 
-.block-of-information .bottom-block p{
+#expiration-date{
+  height: 30px;
+  width: 50px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#CVV{
+  height: 30px;
+  width: 80px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.left-block button{
+  width: 350px;
+  height: 80px;
+  padding: auto;
+  margin-top: 50px;
+  border: none;
+  border-radius: 17px;
+  background-color: #FE8521;
+  font-size: 32px;
+  color: #fff;
+}
+
+.left-block button:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
+}
+/*--------------------------------------------------------------------------*/
+
+
+.right-block{
+  width: 600px;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 18px;
+}
+
+.second-block{
+  height: auto;
+  width: 86%;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.second-block ul{
+  list-style: none;
+}
+
+.second-block ul li{
+  font-size: 24px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid #D3D1D1;
+}
+
+.second-block ul li img{
+  width: 350px;
+  height: 200px;
+}
+
+#unikum{
+  border: none;
+}
+
+.end-block{
+  list-style: none;
+  padding: 0;
   font-size: 20px;
-  font-weight: 700px;
-  margin: 0;
-  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 15px;
 }
 
-.block-of-information .bottom-block .different{
-  margin-right: 180px;
-  margin-top: 30px;
+.end-block ul{
+  list-style: none;
+  margin: 0;
   padding: 0;
+}
+
+.end-block ul li{
+  margin-bottom: 5px;
+}
+
+.price-block{
+  display: flex;
+  justify-content: space-between;
 }
