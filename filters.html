@@ -25,7 +25,7 @@
         <div class="filter">
             <span>
                 <ul>
-                    <!-- Dropdown for Марка -->
+                    <!-- Dropdown Марка -->
                     <li class="dropdown">
                         <button onclick="toggleDropdown('brand-dropdown')">Марка <img src="img/ep_arrow-down.svg"></button>
                         <div id="brand-dropdown" class="dropdown-content">
@@ -42,7 +42,7 @@
                     </li>
                     <li>|</li>
 
-                    <!-- Dropdown for Обʼєм двигуна -->
+                    <!-- Dropdown Обʼєм двигуна -->
                     <li class="dropdown">
                         <button onclick="toggleDropdown('engine-dropdown')">Обʼєм двигуна <img src="img/ep_arrow-down.svg"></button>
                         <div id="engine-dropdown" class="dropdown-content">
@@ -53,7 +53,7 @@
                     </li>
                     <li>|</li>
 
-                    <!-- Dropdown for Вид палива -->
+                    <!-- Dropdown Вид палива -->
                     <li class="dropdown">
                         <button onclick="toggleDropdown('fuel-dropdown')">Вид палива <img src="img/ep_arrow-down.svg"></button>
                         <div id="fuel-dropdown" class="dropdown-content">
@@ -64,7 +64,7 @@
                     </li>
                     <li>|</li>
 
-                    <!-- Dropdown for Вид кузова -->
+                    <!-- Dropdown Вид кузова -->
                     <li class="dropdown">
                         <button onclick="toggleDropdown('body-dropdown')">Вид кузова <img src="img/ep_arrow-down.svg"></button>
                         <div id="body-dropdown" class="dropdown-content">
@@ -75,7 +75,7 @@
                     </li>
                     <li>|</li>
 
-                    <!-- Dropdown for Ціна -->
+                    <!-- Dropdown Ціна -->
                     <li class="dropdown">
                         <button onclick="toggleDropdown('price-dropdown')">Ціна <img src="img/ep_arrow-down.svg"></button>
                         <div id="price-dropdown" class="dropdown-content">
@@ -86,10 +86,43 @@
                     </li>
 
                     <li><button class="mainbutton" id="search">Шукати</button></li>
-                    <li><button class="mainbutton"><img src="img/filter.svg"></button></li>
+                    <li><button class="mainbutton" id="toggle-advanced-filters"><img src="img/filter.svg"></button></li>
                 </ul>
             </span>
         </div>
+		
+		<!-- Разширенные фильтры -->
+		<div id="advanced-filters" class="advanced-filters">
+			<h3>Advanced Filters</h3>
+			<label>Марка:
+				<select name="advanced-brand">
+					<option value="">Any</option>
+					<option value="audi">Audi</option>
+					<option value="bmw">BMW</option>
+					<option value="ford">Ford</option>
+				</select>
+			</label>
+    
+			<label>Об'єм двигуна:
+				<select name="advanced-engine">
+					<option value="">Any</option>
+					<option value="1.6">1.6 L</option>
+					<option value="2.0">2.0 L</option>
+					<option value="3.0">3.0 L</option>
+				</select>
+			</label>
+    
+			<label>Вид палива:
+				<select name="advanced-fuel">
+					<option value="">Any</option>
+					<option value="petrol">Бензин</option>
+					<option value="diesel">Дизель</option>
+					<option value="electric">Електро</option>
+				</select>
+			</label>
+
+		</div>
+		
         <div>
             <img id="car-img" src="img/maincar.png">
             <img id="shadow-car" src="img/Rectangle 2.svg">
@@ -114,6 +147,11 @@
                 });
             }
         });
+		
+		document.getElementById("toggle-advanced-filters").addEventListener("click", function() {
+        const advancedFilters = document.getElementById("advanced-filters");
+        advancedFilters.style.display = advancedFilters.style.display === "block" ? "none" : "block";
+		});
     </script>
 </body>
 </html>
