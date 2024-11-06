@@ -163,6 +163,12 @@ header nav ul li a{
   width: auto;
 }
 
+#toggle-advanced-filters img{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 7px;
+}
+
 /*Фото машини*/
 #car-img{
   position: relative;
@@ -185,3 +191,163 @@ header nav ul li a{
   margin-top: -80px;
 }
 /*---------------------*/
+select {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #FE8521;
+}
+
+label {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+/* Стиль для содержимого выпадающего списка */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E8FAFE;
+    min-width: 180px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    max-height: 200px;
+    overflow-y: auto;
+	
+}
+
+/* Стилизация кнопок выпадающего меню */
+.dropdown button {
+    background-color: transparent;
+    border: none;
+    font-size: 26px;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+	/* font-family: 'Bitstream Iowan Old Style' */
+}
+
+.dropdown label {
+	display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+
+/* Стиль для флажков */
+.dropdown-content label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 4px 0;
+}
+
+.dropdown-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+.dropdown-content input{
+  position: relative;
+  appearance: none;
+  padding: 0;
+  margin-left: 5px;
+  margin-bottom: -3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  background-color: #E8FAFE;
+}
+
+.dropdown-content input:checked{
+  background-color: #000;
+}
+
+/* Дополнительный фильтр */
+#advanced-filters {
+    position: absolute;
+    display: none; /* Изначально скрытые */
+    left: 2.5%;
+    right: 2.5%;
+    z-index: 2;
+    background-color: #E8FAFE;
+    height: auto;
+    margin-top: -50px;
+    padding-left: 100px;
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#advanced-filters h2 {
+  margin-left: -10px;
+}
+
+#advanced-filters h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#advanced-filters label {
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.type_of_transport{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.drive-type{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+
+#advanced-filters label input{
+  position: relative;
+  appearance: none;
+  padding: 0;
+  margin-left: 5px;
+  margin-bottom: -3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #E8FAFE;
+}
+
+#advanced-filters label input:checked{
+  background-color: #000;
+}
+
+
+#advanced-filters select {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #E8FAFE;
+}
+
+.Year-of-release{
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
