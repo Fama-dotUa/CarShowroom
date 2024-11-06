@@ -46,7 +46,7 @@ header .logo a{
   padding-left: 40px;
   font-weight: 600;
   font-size: 25px;
-  color: #000;
+  color: #fff;
 }
 
 header nav{
@@ -163,10 +163,21 @@ header nav ul li a{
   width: auto;
 }
 
+#search:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
+}
+#toggle-advanced-filters:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
+}
+
+
 #toggle-advanced-filters img{
   margin: 0;
   padding: 0;
-  margin-bottom: 7px;
+  margin-top: 7px;
+  margin-bottom: 16px;
 }
 
 /*Фото машини*/
