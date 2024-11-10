@@ -1,0 +1,247 @@
+@import url(https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style);
+@font-face {
+    font-family: "Bitstream Iowan Old Style";
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
+    src: url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style")format("svg");
+}
+
+body{
+  font-family: "Bitstream Iowan Old Style";
+  color: #000;
+  margin: 0 auto;
+  zoom: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/*Шапка початок*/
+
+.headerBox{
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo a{
+  padding-left: 40px;
+  font-weight: 600;
+  font-size: 25px;
+  color: #000;
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-flow: row nowrap;
+}
+
+header nav ul{
+  list-style: none;
+  margin: 0;
+  margin-left: -150px;
+  margin-bottom: 0;
+  display: inline-block;
+  justify-content: center;
+}
+
+header nav ul li{
+  display: inline-block;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  font-size: 18px;
+  color: #000;
+  display: inline-block;
+}
+
+.newAccount{
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 40px;
+}
+
+/*Шапка кінець*/
+
+.wraper{
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  display: block;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.main-block{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.left-block{
+  margin-left: 100px;
+  margin-right: 10px;
+  height: 80%;
+  width: auto;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+.left-block p{
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.left-block a{
+  color: #000;
+}
+
+.left-block input{
+  height: 60px;
+  width: 470px;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.mini-block{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mini-block input{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-top: 4px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.mini-block input:checked{
+  background-color: #000;
+}
+
+.mini-block label{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mini-block a{
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+.left-block button{
+  width: 480px;
+  height: 70px;
+  padding: auto;
+  border: none;
+  border-radius: 17px;
+  background-color: #FE8521;
+  font-size: 32px;
+  color: #fff;
+}
+
+
+.left-block button:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
+}
+/*--------------------------------------*/
+
+.right-block{
+  margin-left: 10px;
+  margin-right: 100px;
+  display: block;
+  height: auto;
+  width: auto;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+
+.right-block p{
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+
+.right-block input{
+  height: 60px;
+  width: 470px;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.right-block button{
+  width: 480px;
+  height: 70px;
+  padding: auto;
+  border: none;
+  border-radius: 17px;
+  background-color: #FE8521;
+  font-size: 32px;
+  color: #fff;
+}
+
+.right-block button:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
+}
+
+.right-block label{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.right-block div{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#messages-to-mail input{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-top: 4px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#messages-to-mail input:checked{
+  background-color: #000;
+}
