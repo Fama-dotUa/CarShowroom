@@ -90,15 +90,12 @@ header nav ul li a{
 /*Шапка кінець*/
 
 .search-block{
-  height: 1203px;
+  height: auto;
   width: 100%;
-  padding: 40px;
 }
 
 .search-block .block-of-options{
-  height: 95%;
   width: 95%;
-  border: 1px solid #000;
   height: auto;
   width: 100%;
 }
