@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Результаты поиска</title>
-    <link rel="stylesheet" type="text/css" href="../css-stylee/filters-stylee.css"> <!-- Путь к CSS -->
+    <link rel="stylesheet" type="text/css" href="../css-stylee/car_selection.css"> <!-- Путь к CSS -->
 </head>
 	<body>
+	<div>
+		<header class="headerBox">
+			
+			<span class="logo"><a href="../index.html">Наше-Авторія</a></span>
+			
+			<nav>
+				<ul >
+					<li><a href="#">КОНТАКТИ</a></li>
+					<li><a href="#">ПРО НАС</a></li>
+					<li><a href="#">ПРОПОЗИЦІЇ</a></li>
+				</ul>
+			</nav>
+
+			<a href="../personal_office.html" class="newAccount"><img src="../img/account.svg"></a>
+		</header>
+	</div>
+
+	<div class="search-block">
+		<div class="block-of-options">
 		<?php
 		// Подключение к базе данных
 		$servername = "localhost";
@@ -104,32 +123,77 @@
 		//echo "</pre>";
 		//die(); // Остановить выполнение, чтобы увидеть данные
 
-		echo "<h2>Результати пошуку</h2>";
+		
 		if ($result->num_rows > 0) {
+			echo "<h2>Результати пошуку</h2>";
 			echo "<div class='car-list'>";
 			while ($row = $result->fetch_assoc()) {
 				echo "<div class='car-item'>";
-				echo "<img src='/CarShowroom-main/" . $row["image"] . "' alt='Car Image' />";
+				echo "<img src='/CarShowroom/" . $row["image"] . "' alt='Car Image' />";
 				
 				
-				echo "<p><strong>Марка:</strong> " . $row["brand"] . "</p>";
-				echo "<p><strong>Модель:</strong> " . $row["model"] . "</p>";
+				echo "<h3>" . $row["brand"]. " ". $row["model"]. "</h3>";
 				echo "<p><strong>Об'єм двигуна:</strong> " . $row["engine_volume"] . " L</p>";
 				echo "<p><strong>Тип палива:</strong> " . $row["fuel_type"] . "</p>";
-				echo "<p><strong>Тип кузова:</strong> " . $row["body_type"] . "</p>";
 				echo "<p><strong>Тип транспорту:</strong> " . $row["type_of_transport"] . "</p>";
-				echo "<p><strong>Тип приводу:</strong> " . $row["drive_type"] . "</p>";
-				echo "<p><strong>Коробка передач:</strong> " . $row["gear_box"] . "</p>";
 				echo "<p><strong>Рік випуску:</strong> " . $row["year_of_release"] . "</p>";
 				echo "<p><strong>Ціна:</strong> $" . $row["price"] . "</p>";
 				echo "</div>";
 			}
 			echo "</div>";
 		} else {
-			echo "<p>Машини не знайдені за заданими критеріями</p>";
+			echo "<h3 id='error'>Машини не знайдені за заданими критеріями</h3>";
 		}
 
 		$conn->close();
 		?>
+		</div>
+	</div>
+
+
+	<div class="block-of-information">
+		<div class="top-block">
+			<div class="top-text-block">
+				<h5>Телефон</h5>
+				<h5 id="namber">+380 87 372 33 92</h5>
+			</div>
+			<div class="top-text-block">
+				<h5>Електрона пошта</h5>
+				<h5 id="email">kornevakristina16@gmail.com</h5>
+			</div>
+			<div class="top-text-block">
+				<span>
+					<img src="../img/instagram.svg">
+					<img src="../img/facebook.svg">
+					<img src="../img/telegram.svg">
+				</span>
+			</div>	
+		</div>
+		<div class="bottom-block">
+			<div class="different">
+				<h5>Моделі</h5>
+				<p>Нові автомобілі</p>
+				<p>Авто на складі</p>
+			</div>
+			<div class="different">
+				<h5>Про компанію</h5>
+				<p>Про нас</p>
+				<p>Політика конфіденційності</p>
+			</div>
+			<div class="different">
+				<h5>Послуги</h5>
+				<p>Кредит</p>
+				<p>Страхування</p>
+				<p>Умови лізингу</p>
+			</div>
+			<div class="different">
+				<h5>Сервіс</h5>
+				<p>Малярно-кузовний відділ</p>
+				<p>Сервісне обслуговування</p>
+				<p>Запчастини</p>
+				<p>Гарантія</p>
+			</div>
+		</div>
+	</div>
 	</body>
 </html>
