@@ -39,7 +39,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Детали машины</title>
-    <link rel="stylesheet" href="car_details.css"> <!-- Подключение CSS -->
+    <link rel="stylesheet" href="car_details.css"> 
 </head>
 <body>
     <div class="car-details">
@@ -52,7 +52,7 @@ $conn->close();
         <p><strong>Рік випуску:</strong> <?php echo $car['year_of_release']; ?></p>
         <p><strong>Ціна:</strong> <span id="price"><?php echo $car['price']; ?></span> USD</p>
         
-        <!-- Добавляем форму для расчёта цены (пример динамической функции) -->
+        <!-- (пример динамической функции) -->
         <div class="dynamic-price">
             <label for="discount">Скидка (%):</label>
             <input type="number" id="discount" placeholder="Введите скидку">
