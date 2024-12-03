@@ -129,6 +129,8 @@
 			echo "<div class='car-list'>";
 			while ($row = $result->fetch_assoc()) {
 				echo "<div class='car-item'>";
+				echo "<a href='car_details.php?id=" . $row["id"] . "'>"; // Ссылка на car_details.php с передачей ID
+
 				echo "<img src='/CarShowroom/" . $row["image"] . "' alt='Car Image' />";
 				
 				
@@ -138,6 +140,7 @@
 				echo "<p><strong>Тип транспорту:</strong> " . $row["type_of_transport"] . "</p>";
 				echo "<p><strong>Рік випуску:</strong> " . $row["year_of_release"] . "</p>";
 				echo "<p><strong>Ціна:</strong> $" . $row["price"] . "</p>";
+				echo "</a>"; // Закрываю ссылку
 				echo "</div>";
 			}
 			echo "</div>";
