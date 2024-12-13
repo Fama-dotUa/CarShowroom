@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css-stylee/filters-stylee.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href="https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style" rel="stylesheet">
+	
+	<title>Вибір авто</title>
+</head>
+<body>
+    <div class="wrapeer">
+        <header class="headerBox">
+            <span class="logo"><a href="index.html">Наше-Авторія</a></span>
+            <nav>
+                <ul>
+                    <li><a href="#">КОНТАКТИ</a></li>
+                    <li><a href="#">ПРО НАС</a></li>
+                    <li><a href="#">ПРОПОЗИЦІЇ</a></li>
+                </ul>
+            </nav>
+            <a href="personal_office.html" class="newAccount"><img src="img/account.svg"></a>
+        </header>
+
+        <h2 class="mainText">ЗНАЙДИ СВОЮ ІДЕАЛЬНУ МАШИНУ</h2>
+        <form action="results_PHP/results.php" method="GET" target="_blank">
+			<div class="filter">
+				<span>
+					<ul>
+						<!-- Dropdown Марка -->
+						<li class="dropdown">
+							<button type="button" onclick="toggleDropdown('brand-dropdown')">Марка <img src="img/ep_arrow-down.svg"></button>
+							<div id="brand-dropdown" class="dropdown-content">
+								<label><input type="checkbox" name="brand[]" value="audi"> Audi</label>
+								<label><input type="checkbox" name="brand[]" value="bmw"> BMW</label>
+								<label><input type="checkbox" name="brand[]" value="chevrolet"> Chevrolet</label>
+								<label><input type="checkbox" name="brand[]" value="ford"> Ford</label>
+								<label><input type="checkbox" name="brand[]" value="honda"> Honda</label>
+								<label><input type="checkbox" name="brand[]" value="hyundai"> Hyundai</label>
+								<label><input type="checkbox" name="brand[]" value="kia"> Kia</label>
+								<label><input type="checkbox" name="brand[]" value="lexus"> Lexus</label>
+								<label><input type="checkbox" name="brand[]" value="toyota"> Toyota</label>
+							</div>
+						</li>
+						<li>|</li>
+
+						<!-- Dropdown Обʼєм двигуна -->
+						<li class="dropdown">
+							<button type="button" onclick="toggleDropdown('engine-dropdown')">Обʼєм двигуна <img src="img/ep_arrow-down.svg"></button>
+							<div id="engine-dropdown" class="dropdown-content">
+								<label><input type="checkbox" name="engine_volume[]" value="1.6"> 1.6 L</label>
+								<label><input type="checkbox" name="engine_volume[]" value="2.0"> 2.0 L</label>
+								<label><input type="checkbox" name="engine_volume[]" value="3.0"> 3.0 L</label>
+							</div>
+						</li>
+						<li>|</li>
+
+						<!-- Dropdown Вид палива -->
+						<li class="dropdown">
+							<button type="button" onclick="toggleDropdown('fuel-dropdown')">Вид палива <img src="img/ep_arrow-down.svg"></button>
+							<div id="fuel-dropdown" class="dropdown-content">
+								<label><input type="checkbox" name="fuel_type[]" value="petrol"> Бензин</label>
+								<label><input type="checkbox" name="fuel_type[]" value="diesel"> Дизель</label>
+								<label><input type="checkbox" name="fuel_type[]" value="electric"> Електро</label>
+							</div>
+						</li>
+						<li>|</li>
+
+						<!-- Dropdown Вид кузова -->
+						<li class="dropdown">
+							<button type="button" onclick="toggleDropdown('body-dropdown')">Вид кузова <img src="img/ep_arrow-down.svg"></button>
+							<div id="body-dropdown" class="dropdown-content">
+								<label><input type="checkbox" name="body_type[]" value="sedan"> Седан</label>
+								<label><input type="checkbox" name="body_type[]" value="suv"> Позашляховик</label>
+								<label><input type="checkbox" name="body_type[]" value="hatchback"> Хетчбек</label>
+								<label><input type="checkbox" name="body_type[]" value="vantajivka"> Вантажівка</label>
+								<label><input type="checkbox" name="body_type[]" value="moto"> Мото</label>
+							</div>
+						</li>
+						<li>|</li>
+
+						<!-- Dropdown Ціна -->
+						<li class="dropdown">
+							<button type="button" onclick="toggleDropdown('price-dropdown')">Ціна <img src="img/ep_arrow-down.svg"></button>
+							<div id="price-dropdown" class="dropdown-content">
+								<label><input type="checkbox" name="price[]" value="20000"> До 20 000</label>
+								<label><input type="checkbox" name="price[]" value="30000"> До 30 000</label>
+								<label><input type="checkbox" name="price[]" value="50000"> До 50 000</label>
+							</div>
+						</li>
+
+						<!-- Кнопка отправки формы -->
+						<li>
+							<button class="mainbutton" id="search" type="submit">Шукати</button>
+						</li>
+
+						<!-- Кнопка расширенного фильтра -->
+						<li>
+							<button class="mainbutton" id="toggle-advanced-filters" type="button">
+								<img src="img/filter.svg">
+							</button>
+						</li>
+					</ul>
+				</span>
+			</div>
+
+			<!-- Разширенные фильтры -->
+			<div id="advanced-filters" class="advanced-filters">
+				<h2>Розширений пошук</h2>
+				
+					 <!--<h3>Тип Транспорту</h3>
+					<div class="type_of_transport">
+						<label for="transport-car">Легкові <input id="transport-car" name="Type-of-Transport[]" type="checkbox" value="Легкові"></label>
+						<label for="transport-moto">Мото <input id="transport-moto" name="Type-of-Transport[]" type="checkbox" value="Мото"></label>
+						<label for="transport-bus">Автобуси <input id="transport-bus" name="Type-of-Transport[]" type="checkbox" value="Автобуси"></label>
+						<label for="transport-truck">Вантажівки <input id="transport-truck" name="Type-of-Transport[]" type="checkbox" value="Вантажівки"></label>
+					</div> -->
+
+					<h3>Тип приводу</h3>
+					<div class="drive-type">
+						<label for="drive-full">Повний <input id="drive-full" name="Drive-type[]" type="checkbox" value="Повний"></label>
+						<label for="drive-front">Передній <input id="drive-front" name="Drive-type[]" type="checkbox" value="Передній"></label>
+						<label for="drive-rear">Задній <input id="drive-rear" name="Drive-type[]" type="checkbox" value="Задній"></label>
+					</div>
+
+					<h3>Коробка передач:</h3>
+					<label for="gear-box-auto">Автомат <input id="gear-box-auto" name="Gear-box[]" type="checkbox" value="Автомат"></label>
+					<label for="gear-box-manual">Механіка <input id="gear-box-manual" name="Gear-box[]" type="checkbox" value="Механіка"></label>
+					
+					<h3>Рік випуску</h3>
+
+					<div class="year-of-release">
+						<label for="">Від</label>
+						<select name="year_from">
+							<option value="">Any</option>
+							<option value="2024">2024</option>
+							<option value="2023">2023</option>
+							<option value="2022">2022</option>
+							<option value="2021">2021</option>
+							<option value="2020">2020</option>
+							<option value="2019">2019</option>
+							<option value="2018">2018</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+							<option value="2013">2013</option>
+							<option value="2012">2012</option>
+							<option value="2011">2011</option>
+							<option value="2010">2010</option>
+							<option value="2009">2009</option>
+							<option value="2008">2008</option>
+							<option value="2007">2007</option>
+							<option value="2006">2006</option>
+							<option value="2005">2005</option>
+							<option value="2004">2004</option>
+							<option value="2003">2003</option>
+							<option value="2002">2002</option>
+							<option value="2001">2001</option>
+							<option value="2000">2000</option>
+							<option value="1999">1999</option>
+							<option value="1998">1998</option>
+							<option value="1997">1997</option>
+							<option value="1996">1996</option>
+							<option value="1995">1995</option>
+							<option value="1994">1994</option>
+							<option value="1993">1993</option>
+							<option value="1992">1992</option>
+							<option value="1991">1991</option>
+							<option value="1990">1990</option>
+							<option value="1989">1989</option>
+							<option value="1988">1988</option>
+							<option value="1987">1987</option>
+							<option value="1986">1986</option>
+							<option value="1985">1985</option>
+						</select>
+						<label for="">до</label>
+						<select name="year_to">
+							<option value="">Any</option>
+							<option value="2024">2024</option>
+							<option value="2023">2023</option>
+							<option value="2022">2022</option>
+							<option value="2021">2021</option>
+							<option value="2020">2020</option>
+							<option value="2019">2019</option>
+							<option value="2018">2018</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+							<option value="2013">2013</option>
+							<option value="2012">2012</option>
+							<option value="2011">2011</option>
+							<option value="2010">2010</option>
+							<option value="2009">2009</option>
+							<option value="2008">2008</option>
+							<option value="2007">2007</option>
+							<option value="2006">2006</option>
+							<option value="2005">2005</option>
+							<option value="2004">2004</option>
+							<option value="2003">2003</option>
+							<option value="2002">2002</option>
+							<option value="2001">2001</option>
+							<option value="2000">2000</option>
+							<option value="1999">1999</option>
+							<option value="1998">1998</option>
+							<option value="1997">1997</option>
+							<option value="1996">1996</option>
+							<option value="1995">1995</option>
+							<option value="1994">1994</option>
+							<option value="1993">1993</option>
+							<option value="1992">1992</option>
+							<option value="1991">1991</option>
+							<option value="1990">1990</option>
+							<option value="1989">1989</option>
+							<option value="1988">1988</option>
+							<option value="1987">1987</option>
+							<option value="1986">1986</option>
+							<option value="1985">1985</option>
+						</select>
+					</div>
+			</div>
+			<!-- Кнопка отправки объединённой формы -->
+			<!-- <button class="mainbutton" id="search" type="submit">Шукати</button> -->
+		</form>
+        <div>
+            <img id="car-img" src="img/maincar.png">
+            <img id="shadow-car" src="img/Rectangle 2.svg">
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown(id) {
+            document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                if (dropdown.id !== id) {
+                    dropdown.style.display = 'none';
+                }
+            });
+            var element = document.getElementById(id);
+            element.style.display = element.style.display === 'block' ? 'none' : 'block';
+        }
+
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+		
+		document.getElementById("toggle-advanced-filters").addEventListener("click", function() {
+        const advancedFilters = document.getElementById("advanced-filters");
+        advancedFilters.style.display = advancedFilters.style.display === "block" ? "none" : "block";
+		});
+
+		
+		// Получаю элементы кнопки и формы
+		//document.getElementById('search').addEventListener('click', function() {
+        // Нахожу форму и отправляю её
+		//	document.querySelector('form[action="results_PHP/results.php"]').submit();
+		//});
+    </script>
+</body>
+</html>
