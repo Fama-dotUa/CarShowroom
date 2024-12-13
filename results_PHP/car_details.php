@@ -214,7 +214,7 @@ $conn->close();
 				
 				<?php
 				// Конвертация из долларов в гривны
-				$usdToUahRate = 27; // Курс доллара
+				$usdToUahRate = 40; // Курс доллара
 				$priceInUah = $car['price'] * $usdToUahRate;
 				$priceWithoutTaxInUah = $priceInUah / 1.2;
 				?>
@@ -327,7 +327,7 @@ $conn->close();
 		});
 
 		updateTotalPrice(); // Обновляю цену при загрузке страницы
-	});
+		});
 
     </script>
 	

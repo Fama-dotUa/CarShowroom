@@ -41,15 +41,16 @@ $conn->close();
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css-stylee/payment.css">
+	<link rel="stylesheet" type="text/css" href="../css-stylee/payment.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link href="https://db.onlinewebfonts.com/c/bc28028bf5fff883c167bfe77545594d?family=Bitstream+Iowan+Old+Style" rel="stylesheet">
 	<title>Оплата</title>
 </head>
 <body>
+
 	<div>
 		<header class="headerBox">
-			<span class="logo"><a href="index.html">Наше-Авторія</a></span>
+			<span class="logo"><a href="../index.html">Наше-Авторія</a></span>
 			<nav>
 				<ul >
 					<li><a href="#">КОНТАКТИ</a></li>
@@ -57,7 +58,7 @@ $conn->close();
 					<li><a href="#">ПРОПОЗИЦІЇ</a></li>
 				</ul>
 			</nav>
-			<a href="personal_office.html" class="newAccount"><img src="img/account.svg"></a>
+			<a href="../personal_office.html" class="newAccount"><img src="../img/account.svg"></a>
 		</header>
 	</div>
 
@@ -67,7 +68,28 @@ $conn->close();
 				<form action="">
 					<h1>Оплата</h1>
 					<div class="personal-info">
-						
+						<div class="first-block">
+							<p>Введіть прізвище</p>
+							<input type="text" placeholder="Ваше прізвище">
+			
+							<p>Введіть по батькові</p>
+							<input type="text" placeholder="Ваше по батькові">
+	
+							<p>Введіть по батькові</p>
+							<input type="text" placeholder="000000000">
+						</div>
+	
+						<div class="second-block">
+							<p>Введіть імʼя</p>
+							<input type="text" placeholder="Ваше імʼя">
+			
+							<p>Введіть номер телефону</p>
+							<input type="text" placeholder="+38 000 000 00 00">
+	
+							<p>Введіть ІНН</p>
+							<input type="text" placeholder="0000000000">
+						</div>
+
 					</div>
 
 					<h2>Метод оплати</h2>
@@ -75,7 +97,22 @@ $conn->close();
 					<div class="third-block">
 						<div class="payment-method"><label for="payment-method"><input type="checkbox"> Платіжна картка</label></div>
 						<div class="card">
-							
+
+							<p>Номер картки</p>
+							<input type="text" placeholder="Номер картки" id="number-card">
+
+							<div class="next-card-info">
+								<div>
+									<p>Термін придатності</p>
+									<input type="text" placeholder="11" id="expiration-date">
+									<label for="">/</label>
+									<input type="text" placeholder="11" id="expiration-date">
+								</div>
+								<div>
+									<p>CVV</p>
+									<input type="password" placeholder="CVV" id="CVV">
+								</div>
+							</div>
 						</div>
 						<div class="payment-method"><label for="payment-method"><input type="checkbox"> PayPal</label></div>
 					</div>
@@ -121,5 +158,6 @@ $conn->close();
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
