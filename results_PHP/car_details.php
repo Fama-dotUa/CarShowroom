@@ -64,7 +64,6 @@ $conn->close();
             <img src="/CarShowroom/<?php echo $car['image']; ?>" alt="Car Image">
 		</div>
 		<div class="car-information">
-			<form action="payment.php" method="GET">
 				<ul>
 					<li id="brand-name"><?php echo $car['brand'] . " " . $car['model']; ?></li>
 					<li>Колір: Сірий Металік</li>
@@ -72,15 +71,7 @@ $conn->close();
 					<li>Тип палива: <?php echo $car['fuel_type']; ?></li>
 					<li>Вид кузову: <?php echo $car['body_type']; ?></li>
 					<li id="price"><?php echo $car['price']; ?> USD</li>
-					
-					<input type="hidden" name="total_price" id="total-price-hidden" value="0">
-					<input type="hidden" name="tax_free_price" id="tax-free-price-hidden" value="0">
-					
-					<!-- скрытое поле с id -->
-					<input type="hidden" name="id" value="<?php echo $car['id']; ?>" />
-					<li id="button-reserve"><button>Забронювати</button></li>
 				</ul>
-			</form>
 		</div>
 	</div>
 
@@ -203,18 +194,18 @@ $conn->close();
 					<ul>
 						<li id="brand-name"><?php echo $car['brand'] . " " . $car['model']; ?></li>
 						<li id="unikum"><img src="/CarShowroom/<?php echo $car['image']; ?>" alt="Car Image"></li>
-						<li>Колір: Сірий Металік</li>
+						<li>Колір: <?php echo $car['color']; ?></li>
 						<li>Обʼєм двигуна: <?php echo $car['engine_volume']; ?> л</li>
 						<li>Тип палива: <?php echo $car['fuel_type']; ?></li>
 						<li>Вид кузову: <?php echo $car['body_type']; ?></li>
-						<li>Матеріал салону кожа, колір: беж</li>
-						<li id="unikum">Два види палива: дизель, бензин</li>
+						<li>Конфигурація авто: <?php echo $car['configuration']; ?></li>
+						<li id="unikum">Вид палива: дизель, бензин</li>
 					</ul>
 				</div>
 				
 				<?php
 				// Конвертация из долларов в гривны
-				$usdToUahRate = 27; // Курс доллара
+				$usdToUahRate = 40; // Курс доллара
 				$priceInUah = $car['price'] * $usdToUahRate;
 				$priceWithoutTaxInUah = $priceInUah / 1.2;
 				?>
@@ -224,18 +215,28 @@ $conn->close();
 						<li>
 							<ul class="price-block">
 								<li>Сума без налогу (20%):</li>
-								<li id="tax-free-price"><?php echo number_format($priceWithoutTaxInUah, 2, ',', ' ') . " грн"; ?></li>
+								<li id="tax-free-price">
+									<?php
+										echo number_format($priceWithoutTaxInUah, 2, ',', ' ') . " грн";
+									?>
+								</li>
 							</ul>
 						</li>
 						<li>
 							<ul class="price-block">
 								<li>Загальна сума:</li>
-								<li id="total-price"><?php echo number_format($priceInUah, 2, ',', ' ') . " грн"; ?></li>
+								<li id="total-price">
+									<?php
+										echo number_format($priceInUah, 2, ',', ' ') . " грн";
+									?>
+								</li>
 							</ul>
 						</li>
 
 						<li>
-							<input type="hidden" name="id" value="<?php echo $car['id']; ?>" />
+							<input type="hidden" name="total_price" id="total-price-hidden" value="<?php echo $priceInUah; ?>">
+							<input type="hidden" name="tax_free_price" id="tax-free-price-hidden" value="<?php echo $priceWithoutTaxInUah; ?>">
+							<input type="hidden" name="id" value="<?php echo $car['id']; ?>">
 							<li> <button type="submit">Оформити замовлення</button></li>
 						</li>
 					</ul>
@@ -327,7 +328,7 @@ $conn->close();
 		});
 
 		updateTotalPrice(); // Обновляю цену при загрузке страницы
-	});
+		});
 
     </script>
 	
