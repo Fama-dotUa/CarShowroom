@@ -214,10 +214,11 @@ $conn->close();
 					<ul>
 						<li>
 							<ul class="price-block">
+								
 								<li>Сума без налогу (20%):</li>
-								<li id="tax-free-price">
+								<li><!--id="tax-free-price"-->
 									<?php
-										echo number_format($priceWithoutTaxInUah, 2, ',', ' ') . " грн";
+										echo number_format($priceInUah, 0, '', ' ') . " грн";
 									?>
 								</li>
 							</ul>
@@ -225,17 +226,17 @@ $conn->close();
 						<li>
 							<ul class="price-block">
 								<li>Загальна сума:</li>
-								<li id="total-price">
+								<li ><!--id="total-price"-->
 									<?php
-										echo number_format($priceInUah, 2, ',', ' ') . " грн";
+										echo number_format($priceWithoutTaxInUah, 0, '', ' ') . " грн";
 									?>
 								</li>
 							</ul>
 						</li>
 
 						<li>
-							<input type="hidden" name="total_price" id="total-price-hidden" value="<?php echo $priceInUah; ?>">
-							<input type="hidden" name="tax_free_price" id="tax-free-price-hidden" value="<?php echo $priceWithoutTaxInUah; ?>">
+							<input type="hidden" name="total_price" id="total-price-hidden" value="<?php echo $priceWithoutTaxInUah; ?>">
+							<input type="hidden" name="tax_free_price" id="tax-free-price-hidden" value="<?php echo $priceInUah; ?>">
 							<input type="hidden" name="id" value="<?php echo $car['id']; ?>">
 							<li> <button type="submit">Оформити замовлення</button></li>
 						</li>

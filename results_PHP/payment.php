@@ -138,19 +138,19 @@ $conn->close();
 						<li>
 							<ul class="price-block">
 								<li>Сума без налогу (20%):</li>
-								<li><?php echo number_format($taxFreePrice, 2, ',', ' ') . " грн"; ?></li>
+								<li><?php echo number_format($taxFreePrice, 0, '', ' ') . " грн"; ?></li>
 							</ul>
 						</li>
 						<li>
 							<ul class="price-block">
 								<li>Загальна сума:</li>
-								<li><?php echo number_format($totalPrice, 2, ',', ' ') . " грн"; ?></li>
+								<li><?php echo number_format($totalPrice, 0, '', ' ') . " грн"; ?></li>
 							</ul>
 						</li>
 						<li>
 							<ul class="price-block">
 								<li>Сума авансу (5%):</li>
-								<li><?php echo number_format($totalPrice * 0.05, 2, ',', ' ') . " грн"; ?></li>
+								<li><?php echo number_format($totalPrice * 0.05, 0, '', ' ') . " грн"; ?></li>
 							</ul>
 						</li>
 					</ul>
